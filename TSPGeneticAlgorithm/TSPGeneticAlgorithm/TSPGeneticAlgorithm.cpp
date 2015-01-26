@@ -240,7 +240,6 @@ void spawnChild(std::vector<individual> &pop){
 }
 
 void individual::calcDistance(std::vector<city> & cities){
-		for (int i=0;i<size;i++){
 			int totalDistance=0;
 			for (int j=0;j<cityNum_;j++){
 				int x=chromosome[j];
@@ -251,7 +250,6 @@ void individual::calcDistance(std::vector<city> & cities){
 					elite=false;
 				}
 			}
-		}
 }
 
 void individual::PMXCrossover(individual p1,individual p2){
